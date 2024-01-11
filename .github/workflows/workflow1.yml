@@ -2,7 +2,7 @@ name: Test Project
 on:
   push:
     branches: [master]
-
+  issues: [opened, edited, deleted]
 jobs:
   test:
     runs-on: ubuntu-latest
