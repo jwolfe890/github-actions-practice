@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-      - name: Run link
-        run: npm run lint
+      - name: Run lint
+        run: eslint --ext .jsx --fix src
       - name: Run tests
         run: npm run test
       - name: Deploy code
