@@ -19,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test echo
-        run: echo "second action ran!"
+        run: echo "second action ran!!"
