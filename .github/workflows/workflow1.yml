@@ -2,7 +2,6 @@ name: Test Project
 on:
   push:
     branches: [main]
-  workflow_dispatch:  # Change 'main' to your branch name if needed
 
 jobs:
   test:
@@ -16,10 +15,6 @@ jobs:
         run: npm run test
       - name: Deploy code
         run: echo "code deployed!"
-
-on:
-  push:
-    branches: [main]
 
 jobs:
   test:
