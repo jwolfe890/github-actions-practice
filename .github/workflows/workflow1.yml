@@ -17,11 +17,10 @@ jobs:
       - name: Deploy code
         run: echo "code deployed!"
 
-name: Test Project
 on:
   push:
     branches: [main]
-    
+
 jobs:
   test:
     runs-on: ubuntu-latest
