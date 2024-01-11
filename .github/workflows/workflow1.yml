@@ -1,0 +1,30 @@
+name: Test Project
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:  # Change 'main' to your branch name if needed
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Run link
+        run: npm run lint
+      - name: Run tests
+        run: npm run test
+      - name: Deploy code
+        run: echo "code deployed!"
+
+name: Test Project
+on:
+  push:
+    branches: [main]
+    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test echo
+        run: echo "second action ran!"
