@@ -15,7 +15,6 @@ jobs:
         run: npm run test
       - name: Deploy code
         run: echo "code deployed!"
-jobs:
   test2:
     runs-on: ubuntu-latest
     steps:
